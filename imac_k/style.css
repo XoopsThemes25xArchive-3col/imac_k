@@ -1,0 +1,336 @@
+body {color: #FFF; background-image: url(visual/hdbg.png); margin: 0; padding: 0;}
+
+table {width: 100%;text-align: left;}
+table.toptable , table.maintable , table.footertable{width: 1000px;margin-left: auto;margin-right: auto;}
+table td {padding: 0; border-width: 0; vertical-align: top;font-size: 12px;font-family: /*"lucida sans unicode",*/Verdana, Arial, Helvetica, sans-serif;}
+
+table.maintable {height:500px;}
+table.toptable {background-color: transparent;}
+
+a {color: #FFF; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #0e3da7;}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #2F5376}
+
+input.formButton {}
+
+.item {border: 1px solid #cccccc;}
+.itemHead {padding: 3px; background-color: #2F5376; color: #FFFFFF;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {background-image: url(visual/th.gif); background-repeat: repeat-x; color: #000000; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+td#headerbanner {width: 100%; background-color: #2F5376; vertical-align: middle; text-align:center;}
+td#headerbar {border-bottom: 1px solid #dddddd; background-image: url(hbar.gif);}
+
+td#leftcolumn {width: 170px;font-size:12px;padding-left: 25px;}
+td#leftcolumn th {color: #000000; vertical-align: middle;}
+td#leftcolumn div.blockTitle {padding: 3px; background-color: #dddddd; color: #639ACE; font-weight: bold;}
+td#leftcolumn div.blockContent {padding: 3px; line-height: 120%;}
+
+
+#centercolumn {font-size: 12px;}
+#centercolumn th {color: #000000; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0px 3px 1px 1px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {background-image: url(visual/tl1.png); background-repeat: no-repeat; background-position: left; padding-left: 33px;padding-top: 5px; color: #FFF;font-size:20px;font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding: 3px; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+	width: 50%; padding: 0px 3px 0px 0px;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {
+	background-image: url(visual/tl2.png); background-repeat: no-repeat; background-position: left; padding-left: 33px;padding-top: 5px;font-size: 18px;color: #FFF; font-weight: bold; margin-top: 0px;
+}
+
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {background-image: url(visual/tl2.png); background-repeat: no-repeat; background-position: left; padding-left: 33px;padding-top: 5px;font-size: 18px;color: #FFF; font-weight: bold; margin-top: 0px;
+}
+#bottomLcolumn .blockContent, #centerLcolumn .blockContent{
+	padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%;
+}
+#bottomRcolumn .blockContent , #centerRcolumn .blockContent{
+	padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%;
+}
+
+div#content {text-align: left; padding: 8px;}
+
+td#rightcolumn {width: 170px; font-size:12px;padding-right: 20px;}
+td#rightcolumn th {color: #000000; vertical-align: middle;}
+td#rightcolumn div.blockTitle {padding: 3px; background-color: #dddddd; color: #639ACE; font-weight: bold;}
+td#rightcolumn div.blockContent {padding: 3px; line-height: 120%;}
+
+td#footerbar {text-align:center;color: #edeff1;}
+td#footerbar a{color: #FFF;}
+
+td#mainmenu a {display: block; margin: 0; padding: 4px;}
+td#mainmenu a:hover {}
+td#mainmenu a.menuTop {padding-left: 3px;}
+td#mainmenu a.menuMain {padding-left: 3px;}
+td#mainmenu a.menuSub {padding-left: 9px;}
+
+td#usermenu a {display: block; margin: 0; padding: 4px;}
+td#usermenu a:hover {}
+td#usermenu a.menuTop {}
+td#usermenu a.highlight {background-color: #fcc;}
+
+
+
+.outer {border: 1px solid silver;}
+.head {background-color: #0e3da7; padding: 5px; font-weight: bold;}
+.even {background-color: #4d81f8; padding: 5px;}
+.odd {background-color: #1057f9; padding: 5px;}
+.foot {background-color: #0e3da7; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #4d81f8; padding: 5px;}
+tr.odd td {background-color: #1057f9; padding: 5px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+/* forms elements */
+input { border: 1px solid #CCCCCC;font-size: 11px; font-family: verdana, arial, helvetica, sans-serif; color: #333333;  background-color: #ffffff;padding-left:3px;background-color: #f7f7f7;}
+textarea {background-color: #f7f7f7;color: #333333; border: #CCCCCC 1px solid; width: 430px; font-size: 11px; font-family: verdana, arial, helvetica, sans-serif;}
+select {border: 1px solid #CCCCCC; font-size: 9px; font-family: verdana, arial, helvetica, sans-serif;}
+.formButton {background-color: #ece9e3;color: #676767;font-weight: bold;text-align:center;}
+input:focus, textarea:focus{background-color: #ffffff;border: 1px solid #9f9f9f;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/* dock2 - bottom */
+.fisheye{
+	width: 100%;
+	margin-bottom: 10px;
+	position: absolute;
+	left: 0px;
+}
+a.fisheyeItem
+{
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	width: 40px;
+	position: absolute;
+	display: block;
+	top: 0;
+}
+a.fisheyeItem2
+{
+	display: block; 
+	font: bold 12px Arial, Helvetica, sans-serif;
+	width: 40px; 
+	color: #FFF; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+.fisheyeItem img
+{
+	border: none;
+	margin: 0 auto 5px auto;
+	width: 100%;
+}
+.fisheyeItem2 img
+{
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+.fisheyeItem span,
+.fisheyeItem2 span
+{
+	display: none;
+	padding-left: 20px;
+}
+.fisheyeContainter
+{
+	
+	position: absolute;
+	height: 50px;
+	background: transparent;
+}
+#fisheye2
+{
+	width: 100%;
+	margin-bottom: 0px;
+	position: relative;
+	left: 0px;
+}
+
+
+/****************************************************************
+  Docking Boxes core CSS: YOU MUST NOT CHANGE OR OVERRIDE THESE 
+*****************************************************************/
+.dbx-clone {
+	position:absolute;
+	visibility:hidden;
+	}
+.dbx-clone, .dbx-clone .dbx-handle-cursor {
+	cursor:move !important;
+	}
+.dbx-dummy {
+	display:block;
+	width:0;
+	height:0;
+	overflow:hidden;
+	}
+.dbx-group, .dbx-box, .dbx-handle {
+	position:relative;
+	display:block;
+	}
+/****************************************************************
+  avoid padding, margins or borders on dbx-box, 
+  to reduce visual discrepancies between it and the clone.  
+  overall, dbx-box is best left as visually unstyled as possible 
+*****************************************************************/
+.dbx-box {
+	margin:0;
+	padding:0;
+	border:none;
+	}
+/****************************************************************
+  otherwise, do what you like :) 
+*****************************************************************/
+/* group container(s) */
+.dbx-group {
+	width:170px;
+	padding:0 0px 10px;
+}
+* html .dbx-group {
+	width: 170px;
+	padding-bottom:0;
+}
+#left-outer {
+	margin:0 10px 0 0;
+	float:left;
+	position:relative;/* additional outer containers must also have position:relative */
+	}
+
+/* handles */
+.dbx-handle {
+	font-size: 13px;
+	color: #FFF;
+	text-align: center;
+	position:relative;
+	margin:0;
+	padding: 9px 0px 7px 0px;
+	background:url(visual/iblock_01.gif) no-repeat 0 0; 
+}
+* html .dbx-handle { 
+	width: 170px; 
+}
+/* handle cursors are in a class of their own
+   so they only get applied if the script is supported */
+.dbx-handle-cursor {
+	cursor:move;
+}
+
+/* toggle images */
+a.dbx-toggle, a.dbx-toggle:visited {
+	display:block;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+	background:url(visual/toggle.gif) no-repeat;
+	position:absolute;
+	top:6px;
+	right:4px;
+	text-indent:-50px;
+	text-decoration:none;
+}
+a.dbx-toggle-open, a.dbx-toggle-open:visited {
+	background-position:0 0;
+}
+a.dbx-toggle-closed, a.dbx-toggle-closed:visited {
+	background-position:0 -20px;
+}
+a.dbx-toggle-hilite-open, a.dbx-toggle-hilite-open:visited {
+	background-position:-20px 0;
+}
+a.dbx-toggle-hilite-closed, a.dbx-toggle-hilite-closed:visited {
+	background-position:-20px -20px;
+}
+
+/* keyboard navigation tooltip */
+.dbx-tooltip {
+	display:block;
+	position:absolute;
+	margin:36px 0 0 125px;
+	width:185px;
+	border:1px solid #000;
+	background:#ffd;
+	color:#000;
+	font:normal normal normal 0.85em tahoma, arial, sans-serif;
+	padding:2px 4px 3px 5px;
+	text-align:left;
+}
+* html .dbx-tooltip { width:210px; }
+
+/* use CSS2 system colors in CSS2 browsers 
+   but not safari, which doesn't support them */
+*[class="dbx-tooltip"]:lang(en) {
+	border-color:InfoText;
+	background:InfoBackground;
+	color:InfoText;
+	font:small-caption;
+	font-weight:normal;
+	}
+/* inner content area */	
+.dbx-content {
+	margin: 0;
+	padding: 5px 10px 9px 10px;
+	background: url(visual/iblock_02.gif) no-repeat 0 100%;
+	overflow: hidden;
+}
+.dbx-content a { color: #FFF}
+.dbx-content a:hover {color: #0e3da7}
+/* toggle state of inner content area */
+.dbx-box-closed .dbx-content {
+	display:block;
+	height:0px;
+	padding:0px;
+	overflow:hidden;
+}
+.dbx-box-closed .dbx-content * {
+	display:none;
+}
+
+/* additional clone styles */
+.dbx-clone {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-khtml-opacity:0.8;
+	filter:alpha(opacity=80);
+}

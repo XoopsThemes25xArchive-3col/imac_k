@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme by aph3x http://www.aphexthemes.com -->
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+
+	<!-- Docking boxes (dbx) by Brothercake - http://www.brothercake.com/ -->
+	<script type="text/javascript" src="<{$xoops_imageurl}>js/dbx.js"></script>
+
+	<!-- dbx configuration script -->
+	<script type="text/javascript" src="<{$xoops_imageurl}>js/dbx-key.js"></script>
+
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<!--[if lt IE 7]>
+ <style type="text/css">
+ img { behavior: url(<{$xoops_imageurl}>js/iepngfix.htc) }
+ </style>
+<![endif]-->
+<script type="text/javascript" src="<{$xoops_imageurl}>js/jquery.js"></script>
+<script type="text/javascript" src="<{$xoops_imageurl}>js/interface.js"></script>
+
+</head>
+<body>
+
+<table class="toptable" cellspacing="0">
+<tr>
+		<td>
+	<img src="<{$xoops_imageurl}>visual/imac_01.png" width="1000" height="255" alt="">
+	</td>
+	</tr>
+  </table>
+<tr>
+<td>
+<div style="width:1000px;margin-right: auto;margin-left: auto;margin-top: -3px;background-image: url(<{$xoops_imageurl}>visual/imac_02.png);">	
+<div>
+  		<table class="maintable" cellspacing="0">
+  <tr>
+    <td id="leftcolumn">
+ <div id="left-outer">
+<div class="dbx-group" id="left">
+       <!-- Start left blocks loop -->
+ <br />
+   <{foreach item=block from=$xoops_lblocks}>
+ <div class="dbx-box">   
+<h3 class="dbx-handle"><{$block.title}></h3>
+<div class="dbx-content"><{$block.content}></div>
+  <br />  </div>
+  <{/foreach}>
+   </div>
+   </div>
+   <!-- End left blocks loop -->
+
+      </td>
+
+      <td id="centercolumn">
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+        <table cellspacing="0">
+		<tr>
+			<td id="centerCcolumn" colspan="2">
+			<!-- Start center-center blocks loop -->
+			<{foreach item=block from=$xoops_ccblocks}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+			<{/foreach}>
+			<!-- End center-center blocks loop -->
+			</td>
+		</tr>
+		<tr>
+			<td id="centerLcolumn">		
+			<!-- Start center-left blocks loop -->
+			<{foreach item=block from=$xoops_clblocks}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+			<{/foreach}>
+			<!-- End center-left blocks loop -->
+			</td>
+			<td id="centerRcolumn">		
+			<!-- Start center-right blocks loop -->
+			<{foreach item=block from=$xoops_crblocks}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+			<{/foreach}>
+			<!-- End center-right blocks loop -->
+			</td>
+		</tr>
+        </table>
+        <{/if}>
+        <!-- End display center blocks -->
+        <div id="content">
+          <{$xoops_contents}>
+        </div>
+        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+        <table cellspacing="0">
+        <{if $xoBlocks.page_bottomcenter}>
+		<tr><td id="bottomCcolumn" colspan="2">
+			<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+			<{/foreach}>
+			</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+			<td id="bottomLcolumn">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+				<{/foreach}>
+			</td>
+			<td id="bottomRcolumn">
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+		<{/foreach}>
+			</td>
+		</tr>
+        <{/if}>
+        </table>
+        <{/if}>
+      </td>
+      <{if $xoops_showrblock == 1}>
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+  <br />
+ <div id="left-outer">
+<div class="dbx-group" id="right">
+        <{foreach item=block from=$xoops_rblocks}>
+ <div class="dbx-box">   
+<h3 class="dbx-handle"><{$block.title}></h3>
+<div class="dbx-content"><{$block.content}></div>
+  <br />  </div>
+   <{/foreach}>
+</div>
+</div>
+     <!-- End right blocks loop -->
+      </td>
+      <{/if}>
+    </tr>
+  </table>
+</div>
+</div>
+</td>
+</tr>
+ <table class="footertable" cellspacing="0">
+	<tr>
+
+		<td>
+
+	<div id="fisheye2" class="fisheye">
+		<div class="fisheyeContainter">
+  <a class="fisheyeItem2" href="#"><img src="<{$xoops_imageurl}>visual/home.png" alt="home" /><span>Home</span></a> 
+  <a class="fisheyeItem2" href="#"><img src="<{$xoops_imageurl}>visual/forum.png" alt="forums" /><span>Forums</span></a> 
+  <a class="fisheyeItem2" href="#"><img src="<{$xoops_imageurl}>visual/news.png" alt="news" /><span>News</span></a> 
+  <a class="fisheyeItem2" href="#"><img src="<{$xoops_imageurl}>visual/link.png" alt="links" /><span>Links</span></a> 
+  <a class="fisheyeItem2" href="#"><img src="<{$xoops_imageurl}>visual/contact.png" alt="contact" /><span>Contact</span></a> 
+  </div>
+</div>
+<!--dock menu JS options -->
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#fisheye2').Fisheye(
+				{
+					maxWidth: 60,
+					items: 'a',
+					itemsText: 'span',
+					container: '.fisheyeContainter',
+					itemWidth: 40,
+					proximity: 80,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+</script><img src="<{$xoops_imageurl}>visual/imac_03.png" width="1000" height="61" alt="">
+</td></tr>
+ </table>
+ </body>
+</html>
